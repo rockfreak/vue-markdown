@@ -10,6 +10,7 @@ import mark from 'markdown-it-mark'
 import toc from 'markdown-it-toc-and-anchor'
 import katex from 'markdown-it-katex'
 import tasklists from 'markdown-it-task-lists'
+import markdownMD from 'markdown-it-multimd-table'
 
 export default {
   md: new markdownIt(),
@@ -148,6 +149,7 @@ export default {
       .use(mark)
       .use(katex, { "throwOnError": false, "errorColor": " #cc0000" })
       .use(tasklists, { enabled: this.taskLists })
+      .use(markdownMD)
 
     if (this.emoji) {
       this.md.use(emoji)
