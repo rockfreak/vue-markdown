@@ -1,3 +1,4 @@
+/* eslint-disable */
 import markdownIt from 'markdown-it'
 import emoji from 'markdown-it-emoji'
 import subscript from 'markdown-it-sub'
@@ -149,7 +150,7 @@ export default {
       .use(mark)
       .use(katex, { "throwOnError": false, "errorColor": " #cc0000" })
       .use(tasklists, { enabled: this.taskLists })
-      .use(markdownMD)
+      .use(markdownMD, {enableMultilineRows: true})
 
     if (this.emoji) {
       this.md.use(emoji)
