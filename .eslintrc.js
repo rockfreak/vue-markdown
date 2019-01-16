@@ -6,9 +6,6 @@ module.exports = {
   env: {
     'browser': true,
   },
-  plugins: [
-    'html'
-  ],
   // add your custom rules here
   'rules': {
     // allow paren-less arrow functions
