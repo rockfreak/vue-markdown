@@ -11,7 +11,7 @@ var banner =
 
 module.exports = {
   entry: './src/build.js',
-  mode: 'production',
+  mode: 'none',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'vue-markdown.js',

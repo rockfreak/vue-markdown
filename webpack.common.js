@@ -12,7 +12,7 @@ var banner =
 
 module.exports = {
   entry: "./src/VueMarkdown.js",
-  mode: 'production',
+  mode: 'none',
   target: "node",
   output: {
     path: path.resolve(__dirname, 'dist'),
