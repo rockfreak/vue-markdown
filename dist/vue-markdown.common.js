@@ -311,7 +311,7 @@ exports.default = {
   render: function render(createElement) {
     var _this = this;
 
-    this.md = new _markdownIt2.default().use(_markdownItSub2.default).use(_markdownItSup2.default).use(_markdownItFootnote2.default).use(_markdownItDeflist2.default).use(_markdownItAbbr2.default).use(_markdownItIns2.default).use(_markdownItMark2.default).use(_markdownItKatex2.default, { "throwOnError": false, "errorColor": " #cc0000" }).use(_markdownItTaskLists2.default, { enabled: this.taskLists }).use(_markdownItMultimdTable2.default);
+    this.md = new _markdownIt2.default().use(_markdownItSub2.default).use(_markdownItSup2.default).use(_markdownItFootnote2.default).use(_markdownItDeflist2.default).use(_markdownItAbbr2.default).use(_markdownItIns2.default).use(_markdownItMark2.default).use(_markdownItKatex2.default, { "throwOnError": false, "errorColor": " #cc0000" }).use(_markdownItTaskLists2.default, { enabled: this.taskLists }).use(_markdownItMultimdTable2.default, { enableMultilineRows: true });
 
     if (this.emoji) {
       this.md.use(_markdownItEmoji2.default);
@@ -419,7 +419,7 @@ exports.default = {
       });
     });
   }
-};
+}; /* eslint-disable */
 
 /***/ }),
 /* 1 */
